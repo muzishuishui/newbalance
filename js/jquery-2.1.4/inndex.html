@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			margin: 10px;
+		}
+		p{
+			width: 20px;
+			height: 20px;
+			background-color: blue;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var div=document.getElementById("one");
+			/*var divs=document.getElementsByTagName("div");
+			for(var i=0;i<divs.length;i++){
+				divs[i].onclick=(function(a){
+					return function(){
+							alert(a)
+					}
+				})(i)
+			}*/
+
+
+			console.log(div);
+			//dom对象转换为jquery对象
+			/*var $div=jQuery("div:odd").css({
+				"color":"green","background-color":"pink"
+			});*/
+
+			/*var $div=$("div :nth-child(2)").css("background-color","red");*/
+
+	/*		var $div=$("div :contains('hello')").css("background-color","red");*/
+			var $div=$("div p:empty").css("background-color","red");
+
+
+				console.log($div)
+			/*$div.on("click",function(){
+				alert("hello")
+			})*/
+			var $input=$(":checked")
+
+		
+			console.log($input)
+		})
+	</script>
+</head>
+<body>
+	<form>
+		姓名：<input type="text" name=""><br>
+		爱好：
+			篮球：	<input type="checkbox">
+			排球：	<input type="checkbox">
+			粽球：	<input type="checkbox">
+		<br>
+		<input type="submit" name="" value="input按钮">
+		<button>botton按钮</button>
+	</form>
+	<div id="one">one
+	<p>a</p>
+	<p></p>
+	</div>
+	<div class="two">two
+	<p>b</p>
+	</div>
+	<div>three
+	<p>a</p>
+	<p></p>
+	<p>hello</p>
+	</div>
+</body>
+</html>

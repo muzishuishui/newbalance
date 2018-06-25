@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding:0;
+	 /*overflow: hidden; */
+}
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.topHeader{
+	background-color: black;
+}
+
+.well{
+	background-color: black;
+	border: 0;
+}
+.well > ol{
+	padding: 0 15%;
+	color: red;
+}
+.well > ol > li{
+	border-left:1px solid white;
+	padding-left: 15px;
+
+}
+h1{
+	color: white;
+}
+p{
+	color: #ededed;
+}
+.rowTop{
+	padding: 5px;
+}
+.faColor{
+	color: white;
+}
+.aCenter > a{
+	margin: 0 auto;
+	position: relative;
+	left: 40%;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.aCenter > a >span{
+	text-decoration: underline;
+}
+
+/*导航条*/
+.navbar-header img{
+	margin: 4px;
+}
+.faTop{
+	margin-top: 20px;
+}
+.navLeft > li{
+	margin-left: -5px;
+}
+.navLeft li:nth-child(3){
+	margin-top: 15px;
+}
+
+/*content*/
+.content{
+	text-align: center;
+
+}
+.content > .row{
+	background-color: #efefef;
+}
+.content > .row >div{
+	padding-top: 25px;
+}
+.container img{
+	margin-top: 5px;
+}
+.container a{
+	text-decoration: none;
+}
+.container a >p{
+	padding-top: 15px;
+	color: black;
+}
+.container a >p:last-child{
+	color: red;
+}
+.container a > h3{
+	color: black;
+}
+
+.diaImageHeight{
+	height: 450px;
+	width: 100%;
+
+}
+
+
+
+/*footer*/
+.footer{
+	text-align: center;
+	background-color: black;
+
+}
+.footer div{
+	margin-top: 1em;
+}
+.footer div:first-child > div{
+	font-size: 1.5em;
+	color: #ededed;
+}
+.footer ul li a{
+	color: #d0d0d0;
+
+}
+.footer ul li{
+	padding: 5px;
+}
+.footer ul li:first-child{
+	font-size: 1.5em;
+}
